@@ -25,7 +25,7 @@ namespace DAL
        }
        public IList<T> GetAll<T>() where T:class
        {
-           return session.QueryOver<T>().List();
+            return session.QueryOver<T>().List();
        }
     }
 }
