@@ -23,7 +23,7 @@ namespace DAL
            session.SaveOrUpdate(t);
            session.Flush();
        }
-       public IList<T> GetAll<T>() where T:class
+       public IList<T>  GetAll<T>() where T:class
        {
             return session.QueryOver<T>().List();
        }
