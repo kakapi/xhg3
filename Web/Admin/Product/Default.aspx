@@ -2,5 +2,5 @@
 
 <%-- 在此处添加内容控件 --%>
 <asp:Content ContentPlaceHolderID="content" runat="server">
-
+<asp:GridView runat="server" ID="gv"></asp:GridView>
 </asp:Content>

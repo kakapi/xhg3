@@ -11,6 +11,14 @@
 <body>
     <form id="form1" runat="server">
     <div>
+    <ul>
+<li>
+<a href="/admin/product/">产品列表</a>
+<a href="/admin/product/edit.aspx">增加产品</a>
+</li>
+</ul>
+    </div>
+    <div>
         <asp:ContentPlaceHolder id="content" runat="server">
         
         </asp:ContentPlaceHolder>
