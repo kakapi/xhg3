@@ -5,9 +5,21 @@ using System.Text;
 using DAL;
 namespace BLL
 {
-    public class BLLBase<T>
+     public class BLLBase<T>
     {
-        public DALBase<T> DalBase{get;set;}
+         DALBase<T> dalBase;
+         public DALBase<T> DalBase
+         {
+             get
+             {
+                 if (dalBase == null)
+                 {
+                     dalBase = new DALBase<T>();
+                 }
+                 return dalBase;
+             }
+             set { dalBase = value; }
+         }
         
         public T Get(object id)
         {
@@ -24,6 +36,14 @@ namespace BLL
         public IList<T> GetAll<T>() where T:class
         {
            return DalBase.GetAll<T>();
+        }
+        public IList<T> GetList(string where)
+        {
+            return DalBase.GetList(where);
+        }
+        public IList<T> GetList(string where, int pageIndex, int pageSize, out int totalRecord)
+        {
+            return DalBase.GetList(where, pageIndex, pageSize, out totalRecord);
         }
     }
 }

@@ -1,18 +1,23 @@
-﻿﻿/*----------------------------------------------------------
-The base color for this template is #5c87b2. If you'd like
-to use a different color start by replacing all instances of
-#5c87b2 with your new color.
-----------------------------------------------------------*/
-html { margin:0; padding:0; border:0; }
-body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, code,del, dfn, em, img, q, dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, dialog, figure, footer, header,hgroup, nav, section { margin:0; padding:0; border:0; font-weight:inherit; font-style:inherit; font-size:12px; font-family:inherit; vertical-align:baseline;} 
-body
+﻿﻿ /*
+ The base color for this template is #5c87b2.
+  If you'd like to use a different color start by replacing all instances of #5c87b2 with your new color. 
+*/ 
+html
 {
-  /*  font-size:80%;
-    font-family: 微软雅黑, Verdana, Helvetica, Sans-Serif;
     margin: 0;
     padding: 0;
-    color: #696969;
-*/
+    border: 0;
+}
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 12px;
+    font-family: inherit;
+    vertical-align: baseline;
 }
 
 a:link
@@ -36,7 +41,6 @@ a:active
 
 p, ul
 {
-    
     line-height: 1.6em;
 }
 ul li
@@ -57,9 +61,8 @@ h1, h2, h3, h4, h5, h6
 h1
 {
     font-size: 2em;
-    
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 h2
 {
@@ -87,8 +90,8 @@ first child of the left and right table columns */
 }
 input[type='text']
 {
-     width:111px;
-    }
+    width: 111px;
+}
 
 /* PRIMARY LAYOUT ELEMENTS   
 ----------------------------------------------------------*/
@@ -122,14 +125,15 @@ page width. Or, you can specify an exact pixel width. */
 }
 .topright
 {
-     float:right;
-     margin-right:20px;
-    }
+    
+    float: right;
+    margin:20px 20px 0 0;
+}
 .logo .login
 {
-    color:#aaa;
-   margin-bottom:30px;
-    }
+    color: #aaa;
+    margin-bottom: 30px;
+}
 .logoTitle
 {
     color: #7C8936;
@@ -141,7 +145,7 @@ page width. Or, you can specify an exact pixel width. */
 {
     font-size: 1.2em;
     text-align: center;
-    font-weight:600;
+    font-weight: 600;
 }
 .logodesc
 {
@@ -153,34 +157,31 @@ page width. Or, you can specify an exact pixel width. */
 }
 .navtab
 {
-    margin-top:7px;
-    padding-left:40px;
+    margin-top: 7px;
+    padding-left: 40px;
     background-color: #6B7A1D;
 }
 
-.navtab a:link,.navtab  a:visited,.navtab a:active
+.navtab a:link, .navtab a:visited, .navtab a:active
 {
-   
     font-size: 1.5em;
     color: White;
-   padding: 10px 15px;
-   display:inline-block;
-   text-decoration:none; 
-   
-  /*  background-position:right center;*/
+    padding: 10px 15px;
+    display: inline-block;
+    text-decoration: none; /*  background-position:right center;*/
 }
 .navtab ul li:first-child
 {
-    background:none;
-    }
+    background: none;
+}
 .navtab ul li
 {
-    background:url(/img/tabsep.jpg) center left no-repeat;
-    padding:0 5px;
-    }
-.navtab  a:hover
+    background: url(/img/tabsep.jpg) center left no-repeat;
+    padding: 0 5px;
+}
+.navtab a:hover
 {
-background-color: #463521;
+    background-color: #463521;
 }
 
 

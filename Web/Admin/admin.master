@@ -15,10 +15,15 @@
 <li>
 <a href="/admin/product/">产品列表</a>
 <a href="/admin/product/edit.aspx">增加产品</a>
+<a href="/admin/notice/">公告列表</a>
+<a href="/admin/notice/edit.aspx">增加公告</a>
 </li>
 </ul>
     </div>
     <div>
+    <div class="pageTitle">
+    <asp:ContentPlaceHolder ID="pageTitle" runat="server"></asp:ContentPlaceHolder>
+    </div>
         <asp:ContentPlaceHolder id="content" runat="server">
         
         </asp:ContentPlaceHolder>

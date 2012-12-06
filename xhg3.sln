@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{0A577940-CA6C-4424-8C11-E58684BDEA20}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Web\", "{D6942190-E75E-4613-A917-60A71B6D03DA}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Web", "{D6942190-E75E-4613-A917-60A71B6D03DA}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		ProjectReferences = "{B365E98E-2FFD-4673-9480-FB77C87AC708}|BLL.dll;{EE214B6D-0477-4CE5-8132-FB1FE5E637F3}|DAL.dll;{0A577940-CA6C-4424-8C11-E58684BDEA20}|Model.dll;"
@@ -30,6 +30,11 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "Web\", "{D6942190-E7
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xhgTest", "xhgTest\xhgTest.csproj", "{7AA92B6C-9B4A-4883-B902-9DAE8FB88C82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{FF74373F-2C71-45E9-BD0B-518FC2302E43}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\xiaohuanggou\images\xhg-index-E.jpg = Docs\xiaohuanggou\images\xhg-index-E.jpg
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -3,8 +3,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
+<asp:Content runat="server" ContentPlaceHolderID="pageTitle">
+产品列表
+</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="content" runat="Server">
-    <div>
+   
         <table>
             <tr>
                 <th>
@@ -14,6 +17,7 @@
                     <asp:TextBox runat="server" ID="tbxName"></asp:TextBox>
                 </td>
             </tr>
+               
             <tr>
                 <th>
                     详情
@@ -27,5 +31,5 @@
             <asp:Button runat="server" ID="btnSave" Text="保存" OnClick="btnSave_Click" />
             <asp:Label runat="server" ID="lblMsg"></asp:Label>
             </div>
-    </div>
+   
 </asp:Content>
