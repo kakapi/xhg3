@@ -52,6 +52,8 @@
     text-align: center;
     margin-right: 4px;
     border: solid 1px #ddd;
+     height:420px;
+   
 }
 .column a
 {
@@ -64,5 +66,22 @@
 .column a:hover
 {
     background-color: #eee;
+   
 }
+
+    .column  ul li, .column div
+    {
+         font-size:1.2em;
+    
+     color:#333;
+     text-align:left;
+     font-weight:600;
+      padding:3px 20px 3px 40px;
+        }
+    .column ul li
+    {
+float:none;
+        }
+
+
 

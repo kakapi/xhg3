@@ -8,32 +8,61 @@
     <div class="rowContent cf">
         <div class="notice">
             <div class="noticeHeader cf">
-                <span>公告栏</span><img  src="/img/arrow.png" />  </div>
-                <asp:Repeater runat="server" ID="rptNotice">
-                <HeaderTemplate><ul></HeaderTemplate>
-                <FooterTemplate></ul></FooterTemplate>
+                <span>公告栏</span><img src="/img/arrow.png" />
+            </div>
+            <asp:Repeater runat="server" ID="rptNotice">
+                <HeaderTemplate>
+                    <ul>
+                </HeaderTemplate>
+                <FooterTemplate>
+                    </ul></FooterTemplate>
                 <ItemTemplate>
-                <li><%#Eval("Title") %></li>
+                    <li>
+                        <%#Eval("Title") %></li>
                 </ItemTemplate>
-                </asp:Repeater>
-               
-          
+            </asp:Repeater>
         </div>
         <div class="imageswitch">
-        <img src="/img/switch1.jpg" alt="" />
+            <img src="/img/switch1.jpg" alt="" />
         </div>
     </div>
-   <div class="rowContent cf">
-
-     <div class="column c1">
-     
-        <a href="#"> 散客采购</a>
+    <div class="rowContent cf">
+        <div class="column sanke">
+            <a href="#">散客采购</a>
+            <img src="img/sanke.jpg" />
+            <div>
+                本网所有菜品报价均比超市采购优惠8折,请尽情选购.</div>
+        </div>
+        <div class="column huiyuan">
+            <a href="#">会员选购</a>
+            <img src="img/sanke.jpg" />
+            <ul>
+                <li>享受本网九折优惠</li>
+                <li>自由选择组合需要的产品</li>
+                <li>满60元免去邮资</li>
+                <li>投票制定种植或者养殖的菜品</li>
+                <li>参加农场活动的资格</li>
+                <li>走进自然,参与种植活动</li>
+            </ul>
+        </div>
+        <div class="column taocan">
+            <a href="#">会员套餐</a>
+            <img src="img/sanke.jpg" />
+            <ul>
+                <li>享受本网八折优惠</li>
+                <li>供菜不足时优先满足</li>
+                <li>满60元免去邮资</li>
+                <li>投票制定种植或者养殖的菜品</li>
+                <li>参加农场活动的资格</li>
+                <li>走进自然,参与种植活动</li>
+            </ul>
+        </div>
+    </div>
+    <div class="rowContent cf">
+    <div class="column2"> <div class="peisong"></div>
+    <div class="chengweihuiyuan"></div>
+    </div>
+    <div class="weihe"></div>
+   
      </div>
-      <div class="column c2">
-        <a href="#"> 会员选购</a>
-      </div>
-      <div class="column c3">
-        <a href="#"> 会员套餐</a>
-      </div>
-   </div>
 </asp:Content>
