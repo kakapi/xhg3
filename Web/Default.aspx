@@ -6,19 +6,19 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="content" runat="Server">
     <div class="rowContent cf">
-        <div class="notice">
-            <div class="noticeHeader cf">
-                <span>公告栏</span><img src="/img/arrow.png" />
+        <div class="leftColumn">
+            <div class="listHeader cf">
+                <span>公告栏</span>
             </div>
             <asp:Repeater runat="server" ID="rptNotice">
                 <HeaderTemplate>
-                    <ul>
+                    <ul class="noticeItem">
                 </HeaderTemplate>
                 <FooterTemplate>
                     </ul></FooterTemplate>
                 <ItemTemplate>
                     <li>
-                        <%#Eval("Title") %></li>
+                      <a href='/Notice/?id=<%#Eval("Id") %>'> <%#Eval("Title") %></a> </li>
                 </ItemTemplate>
             </asp:Repeater>
         </div>

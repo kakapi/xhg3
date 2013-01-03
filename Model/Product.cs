@@ -10,5 +10,19 @@ namespace Model
         public  virtual Guid Id { get; set; }
         public virtual string Name { get; set; }
         public virtual string Description { get; set; }
+        public virtual Category Category { get; set; }
+        public virtual int OrderNo { get; set; }
+        public virtual DateTime LastUpdateTime { get { return lastUpdateTime; } set { lastUpdateTime = value; } }
+        public virtual bool Disabled { get { return disabled; } set { disabled = value; } }
+        public virtual IList<ProductImage> Images { get; set; }
+
+        private DateTime lastUpdateTime;
+        private bool disabled;
+        public Product()
+        {
+            lastUpdateTime = DateTime.Now;
+            disabled = true;
+            Images = new List<ProductImage>();
+        }
     }
 }

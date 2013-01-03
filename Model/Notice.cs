@@ -10,7 +10,7 @@ namespace Model
         public virtual Guid Id { get; set; }
         public virtual string Title { get; set; }
         public virtual string Content { get; set; }
-        public virtual int OrderNum { get; set; }
+        public virtual int OrderNo { get; set; }
         public virtual DateTime LastUpdateTime { get; set; }
         public virtual bool Disabled { get; set; }
     }

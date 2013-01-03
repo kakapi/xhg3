@@ -33,8 +33,8 @@ public partial class Admin_Notice_Edit : System.Web.UI.Page
     {
         tbxTitle.Text = Notice.Title;
         tbxContent.Text = Notice.Content;
-        tbxOrder.Text = Notice.OrderNum.ToString();
-        cbxEnable.Checked = !Notice.Disabled;
+        tbxOrder.Text = Notice.OrderNo.ToString();
+        cbxDisable.Checked = Notice.Disabled;
     }
     protected void btnSave_Click(object sender, EventArgs e)
     {
@@ -51,8 +51,8 @@ public partial class Admin_Notice_Edit : System.Web.UI.Page
         Notice.Content = tbxContent.Text;
         int order;
         int.TryParse(tbxOrder.Text, out order);
-        Notice.OrderNum = order;
-        Notice.Disabled = !cbxEnable.Checked;
+        Notice.OrderNo = order;
+        Notice.Disabled = cbxDisable.Checked;
         Notice.LastUpdateTime = DateTime.Now;
     }
 }

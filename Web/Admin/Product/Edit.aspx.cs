@@ -10,6 +10,7 @@ public partial class Admin_Product_Edit : System.Web.UI.Page
 {
     BLLProduct bllProduct = new BLLProduct();
     Product Product = new Product();
+    BLLCategory bllCate = new BLLCategory();
     bool IsNew = true;
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -20,14 +21,43 @@ public partial class Admin_Product_Edit : System.Web.UI.Page
             IsNew = false;
 
         }
+
+        fu.Visible = !IsNew;
+      
         if (!IsPostBack)
         {
+            Init();
             if (!IsNew)
             {
                 Product = bllProduct.Get(Id);
                 LoadForm();
             }
         }
+    }
+    private void Init()
+    {
+        BindTop();
+        BindSecond();
+    }
+    private void BindTop()
+    {
+        ddlCateTop.DataSource = bllCate.GetCategories();
+        ddlCateTop.DataBind();
+        
+    }
+   
+    
+
+    private void BindSecond()
+    {
+        int parentId =Convert.ToInt32( ddlCateTop.SelectedValue);
+        ddlCateSecond.DataSource = bllCate.GetCategories(parentId);
+        ddlCateSecond.DataBind();
+    }
+    protected void ddlCateTop_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        ddlCateSecond.Items.Clear();
+        BindSecond();
     }
     private void LoadForm()
     {
@@ -38,14 +68,16 @@ public partial class Admin_Product_Edit : System.Web.UI.Page
     {
         UpdateForm();
         bllProduct.SaveOrUpdate(Product);
-        lblMsg.Text = "保存成功";
-        var prs = bllProduct.GetAll<Product>();
-        lblMsg.Text += prs.Count;
+        FineUI.Alert.ShowInParent("保存成功", "", FineUI.MessageBoxIcon.Information
+            ,"window.location.href='edit.aspx?id="+Product.Id+"'");
+       // Response.Redirect("edit.aspx?id=" + Product.Id);
+      
     }
 
     private void UpdateForm()
     {
         Product.Description = tbxDescription.Text;
         Product.Name = tbxName.Text;
+        
     }
 }

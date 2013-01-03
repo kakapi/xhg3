@@ -47,14 +47,17 @@ namespace DAL
                     =MsSqlConfiguration
                     .MsSql2008
                     .ConnectionString(s => s.FromConnectionStringWithKey("xhg"))
+                   
                     .ShowSql();
-
                 _sessionFactory = Fluently.Configure()
                 .Database(msconfg)
                 .Mappings(
-                        m => m.AutoMappings.Add(AutoMap.AssemblyOf<Model.Product>())
-                     )
-                    // m => m.FluentMappings.AddFromAssemblyOf<Model.TourMembership>())
+                       // m => m.AutoMappings.Add(AutoMap.AssemblyOf<Model.Product>())
+                     m => m.FluentMappings.AddFromAssemblyOf<DAL.Mapping.CategoryMap>())
+                     
+                     
+                     
+                   
                     .ExposeConfiguration(BuildSchema)
                     .BuildSessionFactory();
             }

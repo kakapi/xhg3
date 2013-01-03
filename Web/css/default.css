@@ -2,10 +2,16 @@
 {
     margin-bottom: 5px;
 }
-.notice
+.noticeItem li
 {
-    width: 220px;
+   float:none;
+   margin:10px 0;
 }
+.noticeItem li a,.noticeItem li a:link
+{
+    color:#555;
+    
+    }
 .imageswitch, .notice
 {
     float: left;
@@ -15,32 +21,14 @@
 {
     margin-left: 20px;
 }
-.noticeHeader
+
+
+.noticeItem
 {
-    background-color: #D3E18C;
-    text-align: center;
-    padding: 4px 10px;
-    margin-bottom: 5px;
-}
-.noticeHeader img
-{
-    float: right;
-    margin-top: 7px;
-}
-.noticeHeader span
-{
-    font-size: 2em;
-    color: #473423;
-}
-.notice ul, .noticeHeader
-{
-    border: solid 1px #B4CC38;
-}
-.notice ul
-{
+     border: solid 1px #B4CC38;
     padding: 7px;
 }
-.notice ul li
+.noticeItem li
 {
     float: none;
 }

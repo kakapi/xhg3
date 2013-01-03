@@ -17,7 +17,7 @@ public partial class _Default : System.Web.UI.Page
     }
     private void BindNotice()
     {
-        rptNotice.DataSource = bllNotice.GetNoticeListForHomePage().OrderByDescending(x=>x.OrderNum).OrderByDescending(x => x.LastUpdateTime);
+        rptNotice.DataSource = bllNotice.GetNoticeListForHomePage().OrderByDescending(x=>x.OrderNo).OrderByDescending(x => x.LastUpdateTime);
         rptNotice.DataBind();
     }
 }

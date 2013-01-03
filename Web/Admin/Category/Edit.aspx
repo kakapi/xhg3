@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin/admin.master" AutoEventWireup="true"
-    CodeFile="Edit.aspx.cs" Inherits="Admin_Notice_Edit" %>
+    CodeFile="Edit.aspx.cs" Inherits="Admin_Category_Edit" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
@@ -18,18 +18,12 @@
         </tr>
         <tr>
             <td>
-                内容:
+                父类:
             </td>
             <td>
-                <asp:TextBox runat="server" ID="tbxContent" TextMode="MultiLine"></asp:TextBox>
-            </td>
-        </tr>
-        <tr>
-            <th>
-                显示
-            </th>
-            <td>
-                <asp:CheckBox runat="server" ID="cbxDisable"></asp:CheckBox>
+                <asp:RadioButtonList ID="rblParent" runat="server">
+                
+                </asp:RadioButtonList>
             </td>
         </tr>
         <tr>
@@ -38,6 +32,14 @@
             </th>
             <td>
                 <asp:TextBox runat="server" ID="tbxOrder"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                停用
+            </th>
+            <td>
+               <asp:CheckBox runat="server" ID="cbxDisabled" />
             </td>
         </tr>
     </table>

@@ -202,15 +202,34 @@ page width. Or, you can specify an exact pixel width. */
 
 .leftColumn
 {
-    width: 25%;
-    margin-right: 4%;
+    width:240px;
+    padding:10px 15px 0 30px;
+    background:url(../img/leftcolbg.jpg) top left repeat-y;
+    margin-right: 5px;
     float: left;
+}
+.listHeader
+{
+    background: #D3E18C url(../img/arrow.png) 220px no-repeat;
+    text-align: center;
+    padding: 4px 10px;
+    margin-bottom: 5px;
+    border: solid 1px #B4CC38;
+}
+.listHeader img
+{
+    float: right;
+    margin-top: 7px;
+}
+.listHeader span
+{
+    font-size: 2em;
+    color: #473423;
 }
 
 .rightColumn
 {
-    float: right;
-    width: 70%;
+    float: left;
 }
 
 #footer
@@ -228,64 +247,7 @@ page width. Or, you can specify an exact pixel width. */
     margin: 0;
 }
 
-/* MAIN MENU   
-----------------------------------------------------------*/
 
-/* SIDE COLUMN LINKS & HEADINGS  
-----------------------------------------------------------*/
-.leftColumn ul
-{
-    margin: 0;
-    padding: 0 0 30px 0;
-}
-
-.leftColumn ul li
-{
-    list-style: none;
-    margin-top: 5px;
-    line-height: normal;
-}
-
-.leftColumn ul li a
-{
-    list-style: none;
-    padding: 5px;
-    border: 1px solid #e8eef4;
-    line-height: normal;
-    display: block;
-    text-decoration: none;
-    background-color: #e8eef4;
-    font-size: .9em;
-    _height: 1px; /* only IE6 applies CSS properties starting with an underscrore */
-}
-
-.leftColumn ul li a:hover
-{
-    text-decoration: none;
-    background-color: #FFF;
-    border-color: #e2e7ed;
-}
-
-.leftColumn ul li a:active
-{
-    text-decoration: none;
-    background-color: #a6e2a6;
-    border-color: #a6e2a6;
-    color: #FFF;
-}
-
-.leftColumn h2
-{
-    font-size: 1.2em;
-    padding: 5px;
-    margin: 0px;
-    border-color: #5C87B2;
-    background-color: #5C87B2;
-    color: #FFF;
-}
-
-/* buttons (from: http://www.zurb.com/article/266/super-awesome-buttons-with-css3-and-rgba)
-----------------------------------------------------------*/
 
 a.button, a.button:visited
 {
