@@ -14,8 +14,8 @@ public partial class Admin_Category_Edit : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         string paramId = Request["id"];
-        Guid Id;
-        if (Guid.TryParse(paramId, out Id))
+        int Id;
+        if (int.TryParse(paramId, out Id))
         {
             IsNew = false;
 

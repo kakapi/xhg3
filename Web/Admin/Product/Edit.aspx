@@ -8,15 +8,15 @@
     产品列表
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="content" runat="Server">
-    <x:PageManager runat="server" />
+ 
     <table>
     <tr>
           <td>
                 所属类别
             </td>
             <td>
-               <x:DropDownList runat="server" DataTextField="Name" DataValueField="Id" ID="ddlCateTop" OnSelectedIndexChanged="ddlCateTop_SelectedIndexChanged" AutoPostBack="true"></x:DropDownList>
-                   <x:DropDownList runat="server"  DataTextField="Name" DataValueField="Id"  ID="ddlCateSecond"></x:DropDownList>
+               <asp:DropDownList runat="server" DataTextField="Name" DataValueField="Id" ID="ddlCateTop" OnSelectedIndexChanged="ddlCateTop_SelectedIndexChanged" AutoPostBack="true"></asp:DropDownList>
+                   <asp:DropDownList runat="server"  DataTextField="Name" DataValueField="Id"  ID="ddlCateSecond"></asp:DropDownList>
             </td>
         </tr>
         <tr>
@@ -35,16 +35,33 @@
                 <asp:TextBox runat="server" ID="tbxDescription"></asp:TextBox>
             </td>
         </tr>
+         <tr>
+          <td>
+                价格
+            </td>
+            <td>
+                <asp:TextBox runat="server" ID="tbxPrice"></asp:TextBox>
+            </td>
+        </tr>
+         <tr>
+          <td>
+                价格单位
+            </td>
+            <td>
+                <asp:TextBox runat="server" ID="tbxPriceUnit"></asp:TextBox>
+            </td>
+        </tr>
         <tr>
           <td>
                 图片:
             </td>
             <td>
                 <div>
-                    <x:FileUpload runat="server" ID="fu">
-                    </x:FileUpload>
+                    <asp:FileUpload runat="server" ID="fu">
+                    </asp:FileUpload>
                 </div>
                 <div>
+                <asp:Image runat="server" ID="imgProduct" />
                     <asp:Repeater runat="server" ID="rptImg">
                     </asp:Repeater>
                 </div>

@@ -17,6 +17,9 @@
 <a href="/admin/product/edit.aspx">增加产品</a>
 <a href="/admin/notice/">公告列表</a>
 <a href="/admin/notice/edit.aspx">增加公告</a>
+<a href="/admin/category/">分类列表</a>
+<a href="/admin/category/edit.aspx">增加分类</a>
+
 </li>
 </ul>
     </div>

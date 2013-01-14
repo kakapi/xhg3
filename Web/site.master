@@ -18,9 +18,9 @@
                 <img alt="小黄狗有机农场" src="/img/logo.png" />
                 <div class="logoText">
                     <h1 class="logoTitle">
-                        小黄狗生态有机农场</h1>
+                        小黄狗有机生态农场</h1>
                     <div class="logodesc">
-                        我们仅为300个会员提供私人菜品服务</div>
+                        我们仅为300位会员提供私人菜品服务</div>
                     <div class="logoadv">
                         尚有##尊贵席位,尽快加盟</div>
                 </div>
@@ -39,7 +39,7 @@
         </div>
         <div class="navtab">
             <ul class="cf">
-                <li><a href="/">首页</a></li><li><a href="#">菜品选购</a></li><li><a href="#">菜品配送</a></li><li>
+                <li><a href="/">首页</a></li><li><a href="/products/">菜品选购</a></li><li><a href="#">菜品配送</a></li><li>
                     <a href="#">会员中心</a></li><li><a href="#">用户中心</a></li><li><a href="#">帮助中心</a></li><li>
                         <a href="#">关于小黄狗</a></li>
             </ul>

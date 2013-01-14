@@ -18,6 +18,9 @@ namespace DAL.Mapping
             Map(x => x.OrderNo);
             HasMany<ProductImage>(x => x.Images).Cascade.All();
             References<Category>(x => x.Category);
+            Map(x => x.MainImage);
+            Map(x => x.Price);
+            Map(x => x.Unit);
         }
     }
 }

@@ -3,8 +3,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content3" runat="server" ContentPlaceHolderID="pageTitle">
-公告列表
+分类列表
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="content" Runat="Server">
+<asp:Repeater runat="server" ID="rptCates">
+<ItemTemplate>
+<a href='Edit.aspx?id=<%#Eval("ID") %>'><%#Eval("Name") %></a>
+</ItemTemplate>
+</asp:Repeater>
 </asp:Content>
 

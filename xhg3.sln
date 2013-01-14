@@ -32,9 +32,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xhgTest", "xhgTest\xhgTest.csproj", "{7AA92B6C-9B4A-4883-B902-9DAE8FB88C82}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{FF74373F-2C71-45E9-BD0B-518FC2302E43}"
-	ProjectSection(SolutionItems) = preProject
-		Docs\xiaohuanggou\images\xhg-index-E.jpg = Docs\xiaohuanggou\images\xhg-index-E.jpg
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

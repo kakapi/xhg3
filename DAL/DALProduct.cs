@@ -10,7 +10,7 @@ namespace DAL
         public IList<Product> GetProductsByCategory(int cateId, int pageIndex, int pageSize, out int totalRecord)
         {
             string where = string.Empty;
-            if (cateId <= 0 || cateId == null)
+            if (cateId > 0 )
             {
                 where += " and M.Category.Id=" + cateId;
             }

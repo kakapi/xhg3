@@ -1,0 +1,65 @@
+﻿.product
+{
+    color:#473624;
+    float: left;
+    margin: 7px 7px 25px 7px;
+    width:163px;
+}
+.product img
+{
+    height: 216px;
+    width: 161px;
+    border: 1px solid #bbb;
+    margin-bottom:6px;
+}
+.topCate
+{
+    margin: 8px 0 6px 0;
+    padding: 4px 0 4px 10px;
+    background-color: #eee;
+    color: #6B7A1F;
+}
+.topCate span
+{
+    font-size: 24px;
+}
+.pname
+{
+     margin-bottom:8px;
+    
+    }
+.pname .pclass
+{ 
+   color:Red;
+   float:right;
+   font-weight:600;
+   font-size:14px;
+    font-family:Sans-Serif;
+}
+.unit
+{ font-family:新宋体;
+     letter-spacing:0.5px;
+     color:#000;
+      font-weight:500;
+       font-size:12px;
+    }
+.pname .name
+{ color: #463523;
+  font-family:新宋体;
+    font-size:14px;font-weight:600;
+    }
+    .pdesc
+    {color:#463521;
+     font-family:新宋体;
+     letter-spacing:1px;
+       line-height:18px;
+         margin-bottom:8px;
+         
+        }
+        .psel span
+        {
+            color:#476600;
+            float:right;
+            }
+    
+    

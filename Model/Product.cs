@@ -14,7 +14,14 @@ namespace Model
         public virtual int OrderNo { get; set; }
         public virtual DateTime LastUpdateTime { get { return lastUpdateTime; } set { lastUpdateTime = value; } }
         public virtual bool Disabled { get { return disabled; } set { disabled = value; } }
+        public virtual string  MainImage { get; set; }
         public virtual IList<ProductImage> Images { get; set; }
+
+        public virtual decimal Price { get; set; }
+        /// <summary>
+        /// 价格单位
+        /// </summary>
+        public virtual string Unit { get; set; }
 
         private DateTime lastUpdateTime;
         private bool disabled;

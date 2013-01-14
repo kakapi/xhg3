@@ -22,7 +22,7 @@ public partial class Admin_Product_Edit : System.Web.UI.Page
 
         }
 
-        fu.Visible = !IsNew;
+        //fu.Visible = !IsNew;
       
         if (!IsPostBack)
         {
@@ -63,14 +63,27 @@ public partial class Admin_Product_Edit : System.Web.UI.Page
     {
         tbxDescription.Text = Product.Description;
         tbxName.Text = Product.Name;
+        Category topCate = Product.Category.Parent;
+        ddlCateTop.SelectedValue = topCate.Id.ToString();
+        tbxPrice.Text = Product.Price.ToString();
+        tbxPriceUnit.Text = Product.Unit;
+        Category childCate = Product.Category;
+        imgProduct.ImageUrl = Product.MainImage;
+        BindSecond();
+        ddlCateSecond.SelectedValue = childCate.Id.ToString();
+
+
+        //图片
+        imgProduct.ImageUrl = Product.MainImage;
     }
     protected void btnSave_Click(object sender, EventArgs e)
     {
         UpdateForm();
         bllProduct.SaveOrUpdate(Product);
-        FineUI.Alert.ShowInParent("保存成功", "", FineUI.MessageBoxIcon.Information
-            ,"window.location.href='edit.aspx?id="+Product.Id+"'");
-       // Response.Redirect("edit.aspx?id=" + Product.Id);
+        UploadImage(Product.Id.ToString());
+        Product.MainImage = "/Storage/" + Product.Id.ToString() + ".jpg";
+        bllProduct.SaveOrUpdate(Product);
+        Response.Redirect("edit.aspx?id=" + Product.Id);
       
     }
 
@@ -78,6 +91,16 @@ public partial class Admin_Product_Edit : System.Web.UI.Page
     {
         Product.Description = tbxDescription.Text;
         Product.Name = tbxName.Text;
+        Product.Category = bllCate.Get(Convert.ToInt32( ddlCateSecond.SelectedValue));
+        Product.Price = decimal.Parse(tbxPrice.Text);
+        Product.Unit = tbxPriceUnit.Text;
+
         
+    }
+    private void UploadImage(string name)
+    { 
+        string path=Server.MapPath( "/Storage/"+name+".jpg");
+
+        fu.SaveAs(path);
     }
 }

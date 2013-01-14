@@ -5,5 +5,11 @@
 产品列表
 </asp:Content>
 <asp:Content ContentPlaceHolderID="content" runat="server">
-<asp:GridView runat="server" ID="gv"></asp:GridView>
+<asp:GridView runat="server" ID="gv">
+<Columns>
+<asp:HyperLinkField DataNavigateUrlFields="Id" DataNavigateUrlFormatString="edit.aspx?id={0}"
+ DataTextField="Name"
+ />
+</Columns>
+</asp:GridView>
 </asp:Content>
